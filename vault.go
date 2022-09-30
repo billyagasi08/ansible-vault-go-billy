@@ -103,5 +103,5 @@ func DecryptFile(path string, password string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return Decrypt(string(data), string(password))
+	return Decrypt(string(data), string(data2))
 }
